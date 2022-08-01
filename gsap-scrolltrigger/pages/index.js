@@ -1,8 +1,5 @@
 import Boxes from "../components/Boxes"
-import Second from "../components/Second"
-import Third from '../components/Third'
-import Fourth from "../components/Fourth"
-import Fifth from "../components/Fifth"
+import Scroll from "../components/Scroll"
 import FlipPlugin from '../components/FlipPlugin'
 import React, {useEffect} from 'react';
 import { gsap } from 'gsap';
@@ -19,6 +16,7 @@ export default function Home() {
       ScrollTrigger.create({
         trigger: panel,
         start: "top top",
+        end: "300px",
         pin: true,
         pinSpacing: false
       })
@@ -27,13 +25,11 @@ export default function Home() {
   })
   return (
     <>
+    <Scroll />
     <Boxes />
     <FlipPlugin />
     <div className="scrollcontainer">
-    <Second />
-    <Third />
-    <Fourth />
-    <Fifth />
+    
     </div>
     
     </>
