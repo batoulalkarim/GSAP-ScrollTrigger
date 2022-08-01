@@ -2,7 +2,8 @@
 
 const Third = () => {
     return(
-        <div className="third">
+        <div className="panel">
+            <h1 className="center">TWO</h1>
 
         </div>
     )

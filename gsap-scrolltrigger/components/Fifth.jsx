@@ -2,7 +2,8 @@
 
 const Fifth = () => {
     return(
-        <div className="fifth">
+        <div className="panel">
+            <h1 className="center">FOUR</h1>
 
         </div>
     )

@@ -27,8 +27,9 @@ a {
 
 .container {
   /* display: flex; */
-  /* flex-direction: row; */
+  /* flex-direction: column; */
   width: 100%;
+  height:100%;
 }
 
 .a {
@@ -55,7 +56,7 @@ a {
 
 }
 
-.second {
+/* .second {
   background-color: red;
   height: 100vh;
 }
@@ -76,4 +77,14 @@ a {
   background-color: pink;
   height: 100vh;
 
+} */
+
+.panel {
+  height: 100vh;
+  border: solid;
+
+}
+
+.center {
+  text-align: center;
 }

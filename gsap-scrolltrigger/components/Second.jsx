@@ -2,8 +2,8 @@
 
 const Second = () => {
     return(
-        <div className="second">
-
+        <div className="panel" >
+            <h1 className="center">ONE</h1>
         </div>
     )
 }

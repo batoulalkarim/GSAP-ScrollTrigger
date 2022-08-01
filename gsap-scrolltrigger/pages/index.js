@@ -14,34 +14,39 @@ export default function Home() {
     gsap.registerPlugin(ScrollTrigger);
     gsap.defaults({ease: "none", duration: 2})
 
+    gsap.utils.toArray(".panel").forEach((panel, i) => {
+      ScrollTrigger.create({
+        trigger: panel,
+        start: "top top",
+        pin: true,
+        pinSpacing: false
+      })
+    })
     // const tl = gsap.timeline();
     // tl.from(".second", {xPercent: -100})
     //   .from(".third", {xPercent: 100})
     //   .from(".fourth", {yPercent: -100});
 
-      ScrollTrigger.create({
-        trigger: ".second",
-        start: "top top",
-        end: "+=300px",
-        pin: true,
-        pinSpacing: false
-        // animation: tl,
-        // trigger: ".second",
-        // start: "top top",
-        // end: "+=300",
-        // scrub: true, 
-        // pin: true,
-        // anticipatePin: 1
-      });
-  }, [])
+    //   ScrollTrigger.create({
+    //     animation: tl,
+    //     trigger: ".container",
+    //     start: "top top",
+    //     end: "+=300",
+    //     scrub: true, 
+    //     pin: true,
+    //     pinSpacing: false,
+    //     anticipatePin: 1
+    //   });
+  })
   return (
-    <div>
-    <h1>Whats new</h1>
+    <>
     <Boxes />
+    <div className="container">
     <Second />
     <Third />
     <Fourth />
     <Fifth />
     </div>
+    </>
   )
 }

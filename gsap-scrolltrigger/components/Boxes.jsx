@@ -10,7 +10,7 @@ const Boxes = () => {
         gsap.to(".b", {
             scrollTrigger: {
                 trigger: ".a",
-                markers: true,
+                // markers: true,
                 start: "top 50px",
                 endTrigger: ".c",
                 end: "bottom 80%",
@@ -28,7 +28,7 @@ const Boxes = () => {
         gsap.to(".a", {
             scrollTrigger: {
                 trigger: ".a",
-                markers: true,
+                // markers: true,
                 start: "top 50px",
                 endTrigger: ".c",
                 end: "bottom 80%",
@@ -48,7 +48,7 @@ const Boxes = () => {
             start: "top center",
             end: "top 100px",
             scrub: 3,
-            markers: true
+            // markers: true
         }
     });
     
@@ -67,9 +67,35 @@ const Boxes = () => {
         duration: 3
     })
 })
+useEffect(() => {
+    let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".b",
+            start: "top center",
+            end: "top 100px",
+            scrub: 3,
+            // markers: true
+        }
+    });
+    
+    tl.to(".b", {
+        x: 400,
+        rotation: 360,
+        ease: "none",
+        duration: 3
+    })
+    .to(".b", {
+        backgroundColor: "pink",
+        duration: 1
+    })
+    .to(".b", {
+        x: 0,
+        duration: 3
+    })
+})
 
     return(
-        <div className="container">
+        <div className="boxescontainer">
         <div className="a">
 
         </div>
