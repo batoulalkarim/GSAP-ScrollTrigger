@@ -54,3 +54,26 @@ a {
   margin-bottom: 150px;
 
 }
+
+.second {
+  background-color: red;
+  height: 100vh;
+}
+
+.third {
+  background-color: blue;
+  height: 100vh;
+
+}
+
+.fourth {
+  background-color: yellow;
+  height: 100vh;
+
+}
+
+.fifth {
+  background-color: pink;
+  height: 100vh;
+
+}
