@@ -21,10 +21,10 @@ const TextPluginExample = () => {
     useEffect(() => {
         gsap.registerPlugin(TextPlugin);
         const tl = gsap.timeline({repeat:-1, yoyo:false, repeatDelay:0, onComplete:timelineDone, onCompleteParams:["test1", "test2"]});
-            tl.to(text, 1.8, {text:{value:"WEB3 MASTERS", padSpace:true,  ease:"linear"},delay:0});
-            tl.to(text, 2.8, {text:{value:"CSS WIZARDS", padSpace:true, ease:"linear"},delay: 2});
-            tl.to(text, 3.8, {text:{value:"LONG LOST FRIENDS", padSpace:true, ease:"linear"}, delay:3.5});
-            tl.to(text, 3.8, {text:{value:"<3", padSpace:true, ease:"linear"}, delay:3.5});
+            tl.to(text, 1.8, {text:{value:"🌎 WEB3 MASTERS 🌏", padSpace:true,  ease:"linear"},delay:0});
+            tl.to(text, 2.8, {text:{value:"🧙‍♀️ CSS WIZARDS 🧙‍♂️", padSpace:true, ease:"linear"},delay: 2});
+            tl.to(text, 3.8, {text:{value:"💫 LONG LOST FRIENDS 💫", padSpace:true, ease:"linear"}, delay:3.5});
+            tl.to(text, 3.8, {text:{value:"❤️❤️❤️❤️❤️❤️❤️❤️", padSpace:true, ease:"linear"}, delay:3.5});
     }, [text])
 
 
