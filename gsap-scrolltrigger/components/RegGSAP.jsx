@@ -17,16 +17,16 @@ const RegGSAP = () => {
         <div>
             <h2 className="center">Just plain old GSAP</h2>
         <span className="flex">
-        <div className="box" ref={boxRef}>
+        <div className="greenbox" ref={boxRef}>
             LONG
         </div>
-        <div className="box" ref={boxRef2}>
+        <div className="greenbox" ref={boxRef2}>
             LOST
         </div>
-        <div className="box" ref={boxRef3}>
+        <div className="greenbox" ref={boxRef3}>
             FRIENDS
         </div>
-        <div className="box" ref={boxRef4}>
+        <div className="greenbox" ref={boxRef4}>
             .io
         </div>
         </span>

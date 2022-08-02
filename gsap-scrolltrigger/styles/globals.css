@@ -50,6 +50,10 @@ a {
   margin-bottom: 150px;
 }
 
+.boxescontainer {
+  width: 100%;
+}
+
 
 .panel{
   height: 100vh;
@@ -139,7 +143,7 @@ path {
   text-align: center;
 }
 
-.box {
+.greenbox {
   width: 100px;
   height: 100px;
   border-radius: 12px;
@@ -157,4 +161,39 @@ path {
   display: flex;
   justify-content: space-between;
   padding: 30px;
+}
+
+.button {
+  user-select: none;
+}
+
+.app {
+  padding: 10px;
+}
+
+.box {
+  margin: 10px 10px 0 0;
+  user-select: none;
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.box.exiting,
+.box.exited {
+  display: none;
+}
+
+.boxes {  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+button {
+  margin: 1rem 0.5rem;
 }
