@@ -118,3 +118,24 @@ path {
   text-align: center;
 }
 
+.textplugin {
+  text-align: center;
+  margin-left: auto;
+  left: 30%;
+  width: 100%;
+  padding: 0 10px 4px 10px;
+  color: #d2ef79;
+  font-size: 50px;
+  font-family: droid-serif, "Times New Roman", Times, serif;
+  font-weight: 400;
+}
+
+.textpluginbg {
+  background-color: black;
+}
+
+.textplugincenter {
+  color: white;
+  text-align: center;
+}
+
