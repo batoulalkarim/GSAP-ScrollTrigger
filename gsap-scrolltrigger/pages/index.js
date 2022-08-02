@@ -1,6 +1,7 @@
 import Boxes from "../components/Boxes"
 import Scroll from "../components/Scroll"
 import FlipPlugin from '../components/FlipPlugin'
+import MotionPath from "../components/MotionPath";
 import React, {useEffect} from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
@@ -28,9 +29,7 @@ export default function Home() {
     <Scroll />
     <Boxes />
     <FlipPlugin />
-    <div className="scrollcontainer">
-    
-    </div>
+    <MotionPath />
     
     </>
   )
