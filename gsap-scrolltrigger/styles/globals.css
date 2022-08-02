@@ -31,7 +31,7 @@ a {
   border: solid;
   width: 60px;
   height: 60px;
-  color: blue;
+  background-color: blue;
   margin-bottom: 150px;
 }
 
@@ -50,34 +50,12 @@ a {
   margin-bottom: 150px;
 }
 
-/* .second {
-  background-color: red;
-  height: 100vh;
-}
 
-.third {
-  background-color: blue;
-  height: 100vh;
-
-}
-
-.fourth {
-  background-color: yellow;
-  height: 100vh;
-
-}
-
-.fifth {
-  background-color: pink;
-  height: 100vh;
-
-} */
-
-.panel {
+.panel{
   height: 100vh;
   border: solid;
-
 }
+
 
 .center {
   text-align: center;
@@ -90,6 +68,7 @@ input[type="checkbox"] {
 .form-check-label {
   cursor: pointer;
 }
+
 
 .element-container {
   width: 80%;
@@ -108,11 +87,11 @@ input[type="checkbox"] {
   margin: 5px;
 }
 
-.orange {
-  background-color: #f38630;
+.blue {
+  background-color: #4bcbf3;
 }
-.green {
-  background-color: #6fb936;
+.pink {
+  background-color: #f78bea;
 }
 .purple {
   background-color: #7d4696;
@@ -121,12 +100,21 @@ input[type="checkbox"] {
 svg {
   overflow: visible;
   height: 100%;
-  
   /* Fix Safari rendering bug */
   transform: translateZ(0);
 }
 
 path {
   stroke-width: 2;
-  stroke: gray;
+  stroke: rgb(243, 169, 228);
 }
+
+.motionbg {
+  background-color: black;
+}
+
+.motioncenter {
+  color: white;
+  text-align: center;
+}
+

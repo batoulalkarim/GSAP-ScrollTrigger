@@ -6,8 +6,8 @@ gsap.registerPlugin(Flip);
 
 const filterData = [
   { key: "406349dc2b82090fc013779250810d84", id: "allCheck", value: "all", label: "All" },
-  { key: "a60d8cc07e9b0d6f57bcb8ded7b7da33", id: "greenCheck", value: "green", label: "Green" },
-  { key: "293e898899c66c5b452c13dfb73abd74", id: "orangeCheck", value: "orange", label: "Orange" },
+  { key: "a60d8cc07e9b0d6f57bcb8ded7b7da33", id: "pinkCheck", value: "pink", label: "Pink" },
+  { key: "293e898899c66c5b452c13dfb73abd74", id: "blueCheck", value: "blue", label: "Blue" },
   { key: "f51d8f6880043674328ddb45123a8700", id: "purpleCheck", value: "purple", label: "Purple" }
 ];
 
@@ -17,34 +17,34 @@ filtersInitArray.shift();
 const elementsData = [
   {
     "id": "66dccd6b45fab529c10583c7eabd974c",
-    "type": "green"
+    "type": "pink"
   }, {
     "id": "19f15869ca42ec22e3af68748c358f2e",
-    "type": "green"
+    "type": "pink"
   }, {
     "id": "7abb9ed363c90128d0ddd6d9b687e771",
-    "type": "orange"
+    "type": "blue"
   }, {
     "id": "5162114a285af56bcae3440d8afb8917",
     "type": "purple"
   }, {
     "id": "e44ba992c2c8ad38fde8c04bbe1d7d3c",
-    "type": "orange"
+    "type": "blue"
   }, {
     "id": "dbe6edd40feaa3cd75d83c750a302f22",
     "type": "purple"
   }, {
     "id": "64c0105243f140438d1ffe9d03ca0463",
-    "type": "orange"
+    "type": "blue"
   }, {
     "id": "f6dd49fd8df050dee4f763b56c1a1fac",
-    "type": "orange"
+    "type": "blue"
   }, {
     "id": "d301edb5066bb1f000a626df1a2aab1e",
-    "type": "green"
+    "type": "pink"
   }, {
     "id": "481c393926c852245242104aa746664e",
-    "type": "green"
+    "type": "pink"
   }
 ];
 
@@ -128,7 +128,7 @@ const FlipPlugin = () => {
     <div className="container">
       <div className="row">
         <div className="col-12 py-3">
-          <h3 className="text-center">GSAP Flip Plugin & React</h3>
+          <h3 className="center">GSAP Flip Plugin </h3>
           <hr/>
         </div>
         <div className="col-12 text-center">

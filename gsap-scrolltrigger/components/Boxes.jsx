@@ -10,11 +10,10 @@ const Boxes = () => {
         gsap.to(".b", {
             scrollTrigger: {
                 trigger: ".a",
-                // markers: true,
                 start: "top 50px",
                 endTrigger: ".c",
                 end: "bottom 80%",
-                scrub: 1,
+                scrub: true,
                 pin: true,
                 toggleActions: "restart pause reverse pause"
             },
@@ -28,8 +27,7 @@ const Boxes = () => {
         gsap.to(".a", {
             scrollTrigger: {
                 trigger: ".a",
-                // markers: true,
-                start: "top 50px",
+                start: "top center",
                 endTrigger: ".c",
                 end: "bottom 80%",
                 scrub: true,
@@ -47,8 +45,7 @@ const Boxes = () => {
             trigger: ".c",
             start: "top center",
             end: "top 100px",
-            scrub: 3,
-            // markers: true
+            scrub: true,
         }
     });
     
@@ -70,7 +67,7 @@ const Boxes = () => {
 useEffect(() => {
     let tl = gsap.timeline({
         scrollTrigger: {
-            trigger: ".b",
+            trigger: ".a",
             start: "top center",
             end: "top 100px",
             scrub: 3,
@@ -96,6 +93,7 @@ useEffect(() => {
 
     return(
         <div className="boxescontainer">
+        <h3 className="center">Basic ScrollTrigger Example</h3>
         <div className="a">
 
         </div>
