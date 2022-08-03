@@ -37,6 +37,9 @@ const Boxes = () => {
             rotation: 360,
             duration: 3
         });
+        return () => {
+            ScrollTrigger.getAll().forEach(t => t.kill());
+        }
     }, [])
 
     useEffect(() => {
@@ -63,6 +66,9 @@ const Boxes = () => {
         x: 0,
         duration: 3
     })
+    return () => {
+        ScrollTrigger.getAll().forEach(t => t.kill());
+    }
 })
 useEffect(() => {
     let tl = gsap.timeline({
@@ -89,6 +95,9 @@ useEffect(() => {
         x: 0,
         duration: 3
     })
+    return () => {
+        ScrollTrigger.getAll().forEach(t => t.kill());
+    }
 })
 
     return(

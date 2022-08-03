@@ -70,6 +70,9 @@ const FlipPlugin = () => {
       onEnter: elements => gsap.fromTo(elements, {opacity: 0, scale: 0}, {opacity: 1, scale: 1, duration: 1}),
       onLeave: elements => gsap.to(elements, {opacity: 0, scale: 0, duration: 1})
     });
+    return () => {
+      Flip.killFlipsOf(".element-container");
+  }
   }, [filter]);
 
   const filterChangeHandler = ({ target }) => {

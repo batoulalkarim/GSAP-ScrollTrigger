@@ -10,9 +10,12 @@ gsap.registerPlugin(Flip);
 gsap.config({ trialWarn: false });
 
 const wrapColor = gsap.utils.wrap(["blue", "yellow", "purple", "green"])
+// const wrapColor = gsap.set('.boxes', {
+//     color: gsap.utils.random(["blue", "red", "yellow", "purple"])
+// })
 
 function createItem() {
-  return { id: ++count, color: wrapColor(count), status: "entered" }
+  return { id: count++, color: wrapColor(count), status: "entered" }
 }
   
   const el = useRef();
@@ -59,9 +62,10 @@ function createItem() {
         });
       }
     });
-    
+    // ask if this needs a different cleanup function or if removeItems is enough
     // remove the exiting items from the DOM after the animation is done
     timeline.add(() => removeItems(exiting));
+
     
   }, [layout]);
   

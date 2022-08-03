@@ -6,11 +6,14 @@ const RegGSAP = () => {
     const boxRef2 = useRef();
     const boxRef3 = useRef();
     const boxRef4 = useRef();
+
     useEffect(() => {
         gsap.to(boxRef.current, {rotation: "+=360", repeat: 100});
         gsap.to(boxRef2.current, {rotation: "+=360", repeat: 100});
         gsap.to(boxRef3.current, {rotation: "+=360", repeat: 100});
         gsap.to(boxRef4.current, {rotation: "+=360", repeat: 100});
+        //code below stops them from even starting
+        // gsap.killTweensOf(".greenbox")
     }, []);
 
     return(

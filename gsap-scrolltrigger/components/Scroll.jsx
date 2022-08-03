@@ -20,6 +20,9 @@ const Scroll = () => {
                 }
             })
         })
+        return () => {
+            ScrollTrigger.getAll().forEach(t => t.kill());
+        }
 //This code below is if you want it to be centered and the pages scroll over one another
         // gsap.utils.toArray(".panel").forEach((panel, i) => {
         //   ScrollTrigger.create({
